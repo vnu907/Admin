@@ -1,0 +1,32 @@
+package com.example.demo.controller;
+
+import com.example.demo.model.Flight;
+import com.example.demo.repository.FlightRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/admin")
+public class FlightController {
+
+    @Autowired
+    private FlightRepository flightRepository;
+
+    @GetMapping("/add-flight")
+    public String showAddFlightForm(Model model) {
+        Flight flight = new Flight(null, null, null, null, null, null, null, 0);
+        model.addAttribute("flight", flight);
+        return "admin";
+    }
+
+
+    @PostMapping("/add-flight")
+    public String addFlight(Flight flight) {
+        flightRepository.save(flight);
+        return "redirect:/admin/add-flight";
+    }
+}

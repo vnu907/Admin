@@ -1,0 +1,9 @@
+# Database Configuration
+spring.datasource.url=jdbc:postgresql://localhost:5432/FT
+spring.datasource.username=postgres
+spring.datasource.password=123456
+spring.jpa.hibernate.ddl-auto=update
+
+# Spring Cloud Config Server Configuration
+spring.config.import=configserver:
+spring.cloud.config.import-check.enabled=false.

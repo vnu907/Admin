@@ -1,0 +1,5 @@
+package com.java.example.repository;
+
+public class FlightRepository {
+
+}

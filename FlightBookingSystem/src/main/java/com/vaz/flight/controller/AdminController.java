@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.vaz.flight.models.Airport;
+import com.vaz.flight.models.Customer;
 import com.vaz.flight.models.Seat;
 import com.vaz.flight.services.AdminService;
 import com.vaz.flight.services.AirportService;

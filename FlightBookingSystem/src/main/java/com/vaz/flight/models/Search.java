@@ -5,9 +5,10 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Search implements Serializable{
-	/**
-	 * 
-	 */
+	
+	
+	
+	
 	private static final long serialVersionUID = 1L;
 	private String source;
 	private String destination;
@@ -16,9 +17,7 @@ public class Search implements Serializable{
 	private int passenger;
 	private String classOfjourney;
 
-	/**
-	 * 
-	 */
+	
 	public Search() {
 		super();
 		// TODO Auto-generated constructor stub

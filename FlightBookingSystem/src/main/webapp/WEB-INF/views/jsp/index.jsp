@@ -1,5 +1,5 @@
 <%@ include file="jspf/header.jspf"%>
-<title>Airline Reservation System</title>
+<title>Flight Booking System</title>
 </head>
 <body>
 	<div class="body-spidy-container">
@@ -146,11 +146,11 @@
 					</div>
 					<div class="spidy-3-sub-second">
 						<p class="spidy-3-sub-second-text">This website is about
-							Airline Reservation System. On this website your can book flight
+							Flight Booking System. On this website your can book flight
 							tickets and travel all around the world. We provide 24 X 7
 							customer support. If you need any help or any assistance
 							regarding our services, Feel free to reach us or you can mail us
-							at abc@airline.com.</p>
+							at vaz@flight.com.</p>
 					</div>
 				</div>
 			</div>
@@ -195,19 +195,19 @@
 					</div>
 					<div class="spidy-2-sub-feed1">
 						<progress id="file" class="spidy-2-sub-feed1-progress" value="89"
-							max="100"> 89% </progress>
+							max="100"> 70% </progress>
 						<br>
 						<progress id="file" class="spidy-2-sub-feed1-progress" value="67"
-							max="100"> 67% </progress>
+							max="100"> 57% </progress>
 						<br>
 						<progress id="file" class="spidy-2-sub-feed1-progress" value="32"
-							max="100"> 32% </progress>
+							max="100"> 42% </progress>
 						<br>
 						<progress id="file" class="spidy-2-sub-feed1-progress" value="12"
-							max="100"> 12% </progress>
+							max="100"> 17% </progress>
 						<br>
 						<progress id="file" class="spidy-2-sub-feed1-progress" value="02"
-							max="100"> 02% </progress>
+							max="100"> 14% </progress>
 						<br>
 
 					</div>
@@ -221,8 +221,8 @@
 							for="file">&#11088;</label><br>
 					</div>
 					<div class="spidy-2-sub-feed3">
-						<span>3000 users</span><br> <span>2000 users</span><br>
-						<span>1000 users</span><br> <span>400 users</span><br> <span>10
+						<span>3560 users</span><br> <span>1850 users</span><br>
+						<span>980 users</span><br> <span>420 users</span><br> <span>250
 							users</span><br>
 					</div>
 				</div>

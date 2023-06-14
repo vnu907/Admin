@@ -1,0 +1,37 @@
+<nav>
+	<div class="nav-header">
+		<div class="header-subject-1">
+			<a href="/"><img src="/images/runway.png" style="width: 10%"></a>
+		</div>
+		<div class="header-subject-3">
+		<c:choose>
+			<c:when test='${role}'>
+				<a href="/getAllCustomer" class="header-subject-3-1">Customer</a> 
+				<a href="/getAllFlight" class="header-subject-3-2">Flight Details</a> 
+				<a href="/getAllSeat" class="header-subject-3-3">Seats</a> 
+				<a href="/getallairport" class="header-subject-3-4-1">Airport</a> 
+				<a href="getallticketbooking" class="header-subject-3-4-1">Ticket Booking</a> 
+			</c:when>
+			<c:otherwise>
+				<a href="/about"
+				class="header-subject-3-3">About Us</a> <a href="/contact"
+				class="header-subject-3-4">Contact Us</a>
+			</c:otherwise>
+		</c:choose>		
+
+		</div>
+		<div class="header-subject-4">
+			  <c:choose>
+				<c:when test='${not empty user}'>
+				<a href="/userinfo" class="header-subject-4-1">${user}</a> 
+				<a href="/logout" class="header-subject-4-2">Logout</a>
+				</c:when>
+				<c:otherwise>
+				<a href="/login" class="header-subject-4-1">Login</a> 
+				<a href="/signup" class="header-subject-4-2">SignUp</a>	
+				</c:otherwise>
+			</c:choose> 
+			 
+		</div>
+	</div>
+</nav>

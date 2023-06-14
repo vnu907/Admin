@@ -2,6 +2,7 @@ package com.vaz.flight.models;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import javax.persistence.*;
 
@@ -11,9 +12,7 @@ import javax.persistence.*;
 @Table(name = "flightdetails")
 public class FlightDetails implements Serializable {
 	
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue
@@ -44,9 +43,6 @@ public class FlightDetails implements Serializable {
 	@Column(name = "duration")
 	private String duration;
 
-	/**
-	 * 
-	 */
 	public FlightDetails() {
 		super();
 	}

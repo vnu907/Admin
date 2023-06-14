@@ -8,10 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.vaz.flight.models.Customer;
 
-/**
- * @author CodeSpy
- *
- */
+
 @Transactional
 @Service("customerservice")
 public interface CustomerService {

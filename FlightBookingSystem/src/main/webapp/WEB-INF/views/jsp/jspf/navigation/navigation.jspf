@@ -14,7 +14,8 @@
 			</c:when>
 			<c:otherwise>
 				<a href="/about"
-				class="header-subject-3-3">About Us</a> <a href="/contact"
+				class="header-subject-3-3">About Us</a> 
+				<a href="/contact"
 				class="header-subject-3-4">Contact Us</a>
 			</c:otherwise>
 		</c:choose>		

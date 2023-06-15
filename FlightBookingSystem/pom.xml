@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>Airline-Reservation-System</artifactId>
+	<artifactId>FlightBookingSystem</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Airline-Reservation-System</name>
 	<description>Airline Reservation System Project By CodeSpy</description>

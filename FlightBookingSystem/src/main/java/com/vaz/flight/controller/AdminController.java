@@ -1,8 +1,9 @@
 package com.vaz.flight.controller;
 
 
-import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.vaz.flight.models.Airport;
 import com.vaz.flight.models.Customer;
+import com.vaz.flight.models.FlightDetails;
 import com.vaz.flight.models.Seat;
 import com.vaz.flight.services.AdminService;
 import com.vaz.flight.services.AirportService;
@@ -22,6 +24,7 @@ import com.vaz.flight.services.FlightService;
 import com.vaz.flight.services.SeatService;
 import com.vaz.flight.services.TicketBookingService;
 import com.vaz.flight.services.TravelCustomerService;
+
 
 
 @Controller
@@ -187,6 +190,4 @@ public class AdminController {
 		return "GetTravelCustomerDetails";
 	}
 
-	
-	
 }

@@ -1,6 +1,4 @@
 package com.vaz.flight.controller;
-
-
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -64,6 +62,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 @Controller
 @SessionAttributes({ "flightDetails", "search", "user", "customer", "role", "userObj", "userEmail" })
 public class PublicUserController {
+
 	@Autowired
 	private SearchedFlightDetailsService searchedFlightDetailsService;
 
@@ -106,7 +105,7 @@ public class PublicUserController {
 	Customer customer = null;
 	Airport sourceAirport = null;
 	Airport destinationAirport = null;
-
+//	User user = null;
 
 	@GetMapping("/")
 	public String airlineHomePage(ModelMap model, HttpSession session, Authentication authentication) {

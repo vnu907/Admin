@@ -17,6 +17,38 @@ import net.bytebuddy.utility.RandomString;
 @Configuration
 public class ExtraUtilityWork {
 
+	public SeatStatus updateSeats(SeatStatus seatStatus, Search search) {
+		String classOfJourney = search.getClassOfjourney();
+		int passenger = search.getPassenger();
+		if (classOfJourney.equals(SeatClass.ECONOMY.label)) {
+			seatStatus.setAvailableSeats(seatStatus.getAvailableSeats() - passenger);
+			seatStatus.setBookedSeats(seatStatus.getBookedSeats() + passenger);
+			seatStatus.setEconomyseatsavailable(seatStatus.getEconomyseatsavailable() - passenger);
+			seatStatus.setEconomyseatsbooked(seatStatus.getEconomyseatsbooked() + passenger);
+		} else if (classOfJourney.equals(SeatClass.BASIC_ECONOMY.label)) {
+			seatStatus.setAvailableSeats(seatStatus.getAvailableSeats() - passenger);
+			seatStatus.setBookedSeats(seatStatus.getBookedSeats() + passenger);
+			seatStatus.setBasiceconomyseatsavailable(seatStatus.getBasiceconomyseatsavailable() - passenger);
+			seatStatus.setBasiceconomyseatsbooked(seatStatus.getBasiceconomyseatsbooked() + passenger);
+		} else if (classOfJourney.equals(SeatClass.PREMIUM_ECONOMY.label)) {
+			seatStatus.setAvailableSeats(seatStatus.getAvailableSeats() - passenger);
+			seatStatus.setBookedSeats(seatStatus.getBookedSeats() + passenger);
+			seatStatus.setPremiumeconomyseatsavailable(seatStatus.getPremiumeconomyseatsavailable() - passenger);
+			seatStatus.setPremiumeconomyseatsbooked(seatStatus.getPremiumeconomyseatsbooked() + passenger);
+		} else if (classOfJourney.equals(SeatClass.BUSINESS.label)) {
+			seatStatus.setAvailableSeats(seatStatus.getAvailableSeats() - passenger);
+			seatStatus.setBookedSeats(seatStatus.getBookedSeats() + passenger);
+			seatStatus.setBusinessseatsavailable(seatStatus.getBusinessseatsavailable() - passenger);
+			seatStatus.setBusinessseatsbooked(seatStatus.getBusinessseatsbooked() + passenger);
+		} else {
+			seatStatus.setAvailableSeats(seatStatus.getAvailableSeats() - passenger);
+			seatStatus.setBookedSeats(seatStatus.getBookedSeats() + passenger);
+			seatStatus.setFirstseatsavailable(seatStatus.getFirstseatsavailable() - passenger);
+			seatStatus.setFirstseatsbooked(seatStatus.getFirstseatsbooked() + passenger);
+		}
+
+		return seatStatus;
+	}
 	
 	@Bean
 	public String generateOneTimePassword() {
